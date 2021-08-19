@@ -1,14 +1,21 @@
-var inquirer = require('inquirer');
+var inquirer = require("inquirer");
 
-const questions = [];
+/* const questions = [
+  {
+    type: "input",
+    name: "name",
+    message: "What is your Team Manager's name?",
+    validate: (answer) => {
+      if (answer === "") {
+        return "Please enter a valid name";
+      }
+      return true;
+    },
+  },
+]; */
 
-
-
-
-
-
-
-inquirer.prompt(questions)
+inquirer
+  .prompt(questions)
   .then((answers) => {
     // Use user feedback for... whatever!!
   })
