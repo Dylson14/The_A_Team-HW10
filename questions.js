@@ -50,7 +50,6 @@ const questions = [
   },
   /* Team Manager ends here */
 
-  /* Menu starts here  */
   { /* Teammates menu */
     type: "list",
     name: "teamMenu",
@@ -64,6 +63,7 @@ const questions = [
     },
   },
 
+  /* trying to branch into a promt sequence whe  */
   {
    if(answers.teamMenu === choices[0]){
      console.log("Engineer was chosen");
