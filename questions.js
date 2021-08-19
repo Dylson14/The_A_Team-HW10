@@ -13,8 +13,8 @@ const questions = [
     },
   },
 
-  { /* Manager's ID */
-    type: "input",
+  { /* Manager's ID */ 
+   type: "input",
     name: "employeeID",
     message: "What is your Team Manager's Employee ID?",
     validate: (answer) => {
@@ -48,7 +48,30 @@ const questions = [
       return true;
     },
   },
-  /* Team Manager member ends here */
+  /* Team Manager ends here */
+
+  /* Menu starts here  */
+  { /* Teammates menu */
+    type: "list",
+    name: "teamMenu",
+    message: "Which additional positions would you like to recruit to your team?",
+    choices:["Engineer","Intern"],
+    validate: (answer) => {
+      if (isNaN(answer)) {
+        return "Please enter a valid option";
+      }
+      return true;
+    },
+  },
+
+  {
+   if(answers.teamMenu === choices[0]){
+     console.log("Engineer was chosen");
+    }
+  }
+   
 ];
+
+/*  */
 
 module.exports = questions;
