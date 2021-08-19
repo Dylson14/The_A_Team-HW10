@@ -1,16 +1,14 @@
 var inquirer = require("inquirer");
 var questions = require("./questions");
 
-
-inquirer.prompt(questions)
-  
-/*   .then((answers) => {
-    // Use user feedback for... whatever!!
+inquirer
+  .prompt(questions)
+  .then((answers) => {
+    console.log(answers);
+    console.log(answers.teamMenu);
   })
   .catch((error) => {
     if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
+      console.log("something went wrong");
     }
-  }); */
+  });
