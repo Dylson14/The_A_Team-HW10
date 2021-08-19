@@ -1,6 +1,7 @@
 var inquirer = require("inquirer");
 var questions = require("./questions");
-const questions = [
+
+/* const questions = [
   {
     type: "input",
     name: "name",
@@ -13,6 +14,7 @@ const questions = [
     },
   },
 ];
+ */
 
 inquirer.prompt(questions)
   
