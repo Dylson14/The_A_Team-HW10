@@ -1,5 +1,5 @@
 /* This file will be solely responsible for the prompts and questions */
-
+module.exports = questions;
 
 const questions = [
     {

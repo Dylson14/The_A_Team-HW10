@@ -1,6 +1,6 @@
 var inquirer = require("inquirer");
-
-/* const questions = [
+var questions = require("./questions");
+const questions = [
   {
     type: "input",
     name: "name",
@@ -12,11 +12,11 @@ var inquirer = require("inquirer");
       return true;
     },
   },
-]; */
+];
 
-inquirer
-  .prompt(questions)
-  .then((answers) => {
+inquirer.prompt(questions)
+  
+/*   .then((answers) => {
     // Use user feedback for... whatever!!
   })
   .catch((error) => {
@@ -25,4 +25,4 @@ inquirer
     } else {
       // Something else went wrong
     }
-  });
+  }); */
