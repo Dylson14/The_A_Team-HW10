@@ -1,5 +1,5 @@
 /* This file will be solely responsible for the prompts and questions */
-const questions = [
+const managerPrompt = [
   /* Team Manager starts here */
   { /* Manager's Name */
     type: "input",
@@ -49,29 +49,8 @@ const questions = [
     },
   },
   /* Team Manager ends here */
-
-  { /* Teammates menu */
-    type: "list",
-    name: "teamMenu",
-    message: "Which additional positions would you like to recruit to your team?",
-    choices:["Engineer","Intern"],
-    validate: (answer) => {
-      if (isNaN(answer)) {
-        return "Please enter a valid option";
-      }
-      return true;
-    },
-  },
-
-  /* trying to branch into a promt sequence whe  */
- /*  {
-   if(answers.teamMenu === choices[0]){
-     console.log("Engineer was chosen");
-    }
-  } */
    
 ];
 
-/*  */
 
-module.exports = questions;
+module.exports = managerPrompt;

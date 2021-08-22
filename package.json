@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Dylson14/The_A_Team-HW10#readme",
   "dependencies": {
     "inquirer": "^8.1.2",
-    "jest": "^27.0.6"
-  },
-  "devDependencies": {}
+    "jest": "^27.0.6",
+    "tailwindcss": "^2.2.7"
+  }
 }
