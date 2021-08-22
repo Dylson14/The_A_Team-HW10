@@ -30,13 +30,13 @@ const generateTeam = (teamArr) => {
              <h1 class="text-white ml-4 border-2 py-2 px-4 rounded-full font-medium">Engineer</h1>
              <p class=" text-white bg py-6 px-6 text-lg tracking-wide text-center justify-center font-bold">${engineer.name}</p>
            </div>
-           <p class="p-1 text-lg tracking-wide text-center">ID:${engineer.id}</p>
+           <p class="p-1 text-lg tracking-wide text-center">ID:${engineer.email}</p>
            <p class="p-1 px-6 text-lg tracking-wide text-center">Github:${engineer.github}</p>
                                <!-- <hr > -->
                                <div class="flex justify-center px-5 mb-2 text-sm ">
                                    <button type="button"
                                        class="border border-green-500 text-green-500 rounded-md px-4 py-2 m-2 transition duration-500 ease select-none hover:text-white hover:bg-green-600 focus:outline-none focus:shadow-outline">
-                                        Email:${engineer.email}
+                                        Email:${engineer.id}
                                    </button>
                                </div>
         </div>
